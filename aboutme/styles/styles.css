@@ -23,3 +23,10 @@ footer {
     background-color: steelblue;
     color: white;
 }
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+#active {
+    font-weight: 900;
+}
