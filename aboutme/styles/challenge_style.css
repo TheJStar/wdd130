@@ -1,0 +1,18 @@
+.title { 
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+div {
+    background-color: dimgray;
+    text-align: center;
+}
+div img {
+    margin:50px 50px;
+    border-radius: 50%;
+    border: 25px solid rgb(47, 47, 47);
+}
+body {
+    background-color: dimgray;
+}
