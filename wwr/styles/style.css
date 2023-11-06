@@ -233,3 +233,82 @@ footer .social img {
     }
 }
       
+
+/* hot deal page */
+
+.selected {
+    background-color: #ee964b;
+    color: #083d77;
+}
+.selected:hover {
+    color: #ebebd3;
+}
+.hot-deal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.hot-deal-img {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    z-index: -1;
+}
+.deal-box {
+    display: flexbox;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 50px;
+    width: 500px;
+    height: 300px;
+    justify-self: end;
+    align-self: end;
+    border-radius: 20px;
+    -webkit-mask-image: radial-gradient(black 55%, transparent);
+    mask-image: radial-gradient(black 55%, transparent);
+    backdrop-filter: blur(10px);
+}
+.hot-deal-title {
+    margin-left: 10px;
+    font-size: 40px;
+}
+.deal-text {
+    display: inline;
+    margin: 0;
+}
+.hot-deal-footer {
+    margin-top: 0;
+}
+.shiny {
+    display: inline;
+    background: linear-gradient(45deg, #ee964b 60%, white 70%, #ee964b 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200%;
+    animation: shiny 2s linear infinite;
+    color: transparent;
+}
+.button-box-hot-deal {
+    margin: 20px 185px;
+    animation: shake 2s ease infinite;
+}
+
+@keyframes shiny {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 400px 0px;
+    }
+}
+@keyframes shake {
+    0%, 50%, 100%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+}
