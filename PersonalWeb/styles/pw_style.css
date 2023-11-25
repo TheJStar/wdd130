@@ -1,0 +1,66 @@
+nav {
+    display: grid;
+    width: auto;
+    grid-template-areas: repeat(10, 0fr) / repeat(5, 20%);
+    background: url("mages/backgrounds/page 1.jpg");
+    background-repeat: no-repeat;
+    background-size: 10% 10%;
+}
+nav a {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    justify-self: center;
+    color: #fff;
+}
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+nav a:nth-of-type(1) {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+nav a:nth-of-type(2) {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+}
+nav a:nth-of-type(3) {
+    grid-column: 6/9;
+    grid-row: 1/2;
+}
+.nav-background {
+    width: 100%;
+    grid-column: 1/10;
+    grid-row: 1/5;
+    z-index: -1;
+}
+.side-pages {
+    width: 50px;
+}
+.logo-home {
+    margin: -30px;
+    width: 200px;
+}
+.content {
+    display: grid;
+    grid-template-areas: repeat(8, 12.5%)/ 2em repeat(5, 20%);
+    text-align: center;
+}
+.content div {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+.content img {
+    grid-column: 5/6;
+    grid-row: 3/3;
+}
+footer {
+    background-color: aqua;
+}
