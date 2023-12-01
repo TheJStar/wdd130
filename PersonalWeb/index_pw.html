@@ -43,9 +43,12 @@
                 progress on my game, the journey that it goes through, and 
                 later where you can download the game, give me feedback, 
                 get notified of events.</p>
-            <a href="joinUs.html">Join Us</a>
+            <a href="joinUs.html">
+                <button onmouseover="myFunction()">Join Us</button>
+            </a>   
         </div>
-        <img src="images/Icons/dice-six.png" alt="dice with a six on it">
+        <img src="images/Icons/dice-six.png" alt="dice with a six on it">        
+        <div id="snackbar">Yeah do it join us</div> <!--snackbar-->
     </main>
     <footer>
         <h1>Dice Game © 2023 - Joel Ayvazyan</h1>
@@ -59,5 +62,17 @@
             <a href="#"><img src="images/Icons/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+            // Get the snackbar DIV
+            var x = document.getElementById("snackbar");
+
+            // Add the "show" class to DIV
+            x.className = "show";
+
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+    </script>
 </body>
 </html>
