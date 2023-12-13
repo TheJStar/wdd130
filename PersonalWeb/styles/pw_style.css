@@ -44,9 +44,11 @@ body {
 }
 p {
     font-size: 25px;
+    font-family: var(--paragraph-font);
 }
 h1 {
     font-size: 50px;
+    font-family: var(--heading-font);
 }
 /*Home Page*/
 /*Hero*/
