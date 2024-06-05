@@ -26,7 +26,7 @@ header {
     display: block;
     background-color: var(--background-color);
     padding: 20px 0;
-    background-image: url("./images/messy_sketch_2.jpg");
+    background-image: url("images/messy_sketch_2.jpg");
     background-size: 100% auto;
     background-position: 0% 30%;
 }
