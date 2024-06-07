@@ -26,7 +26,7 @@ header {
     display: block;
     background-color: var(--background-color);
     padding: 20px 0;
-    background-image: url("/images/messy_sketch_2.jpg");
+    background-image: url("../../images/messy_sketch_2.jpg");
     background-size: 100% auto;
     background-position: 0% 30%;
 }
@@ -92,12 +92,42 @@ footer {
     margin: 10px;
 }
 
-/* #art img:active {
+.rotate {
+    rotate: 90deg;
+}
+
+.rotate-neg {
+    rotate: -90deg;
+}
+
+/* .normal:active {
     transition: all 1s;
-    position: absolute;
-    top: center;
-    right: center;
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
     scale: 1.2;
+    z-index: 1;
+}
+
+.rotate:active {
+    transition: all 1s;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -100%);
+    scale: 1.2;
+    z-index: 1;
+}
+
+.rotate-neg:active {
+    transition: all 1s;
+    position: fixed;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -100%);
+    scale: 1.2;
+    z-index: 1;
 }
 
 #art:active img:not(#art img:active) {
