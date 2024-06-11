@@ -93,6 +93,7 @@ footer {
 }
 
 .normal {
+    align-self: center;
     /* width: ;
     height: ; */
 }
